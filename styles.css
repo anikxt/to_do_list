@@ -1,0 +1,49 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+div.container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: calc(100vh - 2px - 20rem - 8rem);
+  width: 22rem;
+  margin: 10rem auto;
+  padding: 4rem 4rem;
+}
+
+form {
+  display: flex;
+  width: 100%;
+}
+
+ul.list {
+  width: 100%;
+  padding: 0px;
+}
+
+li.list-item {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+li > button {
+  margin-left: auto;
+}
+
+li > span {
+  margin: 0px 4px;
+  flex: 1;
+}
+
+.submit-btn {
+  margin-left: auto;
+}
+
+.todo-input {
+  margin: 0px 4px;
+  flex: 1;
+}

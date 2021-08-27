@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="advToDoList.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="new-todo-form">
+        <label for="todo-input">New Todo</label>
+        <input required type="text" class="todo-input" id="todo-input" />
+        <button class="submit-btn" type="submit">Add todo</button>
+      </form>
+
+      <ul class="list" id="list"></ul>
+
+      <template id="list-item-template">
+        <li class="list-item">
+          <label class="list-item-label">
+            <input type="checkbox" data-list-item-checkbox />
+          </label>
+          <span data-list-item-text></span>
+          <button data-button-delete>Delete</button>
+        </li>
+      </template>
+    </div>
+  </body>
+  <!-- </html> -->
+
+  <!-- Anything inside template tag does not get rendered -->
+</html>
